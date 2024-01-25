@@ -1,6 +1,6 @@
 package com.cas.access;
 
-import com.cas.access.domain.AccessServerPort;
+import com.cas.access.entity.AccessServerPort;
 import com.cas.access.mapper.AccessServerPortMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
