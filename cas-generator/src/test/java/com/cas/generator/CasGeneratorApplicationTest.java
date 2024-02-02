@@ -19,7 +19,7 @@ public class CasGeneratorApplicationTest {
     @Test
     public void test() {
         DataSourceConfig.Builder DATA_SOURCE_CONFIG = new DataSourceConfig
-                .Builder("jdbc:mysql://localhost:3306/cas_dap_access?useSSL=false&serverTimezone=UTC", "root", "root123456");
+                .Builder("jdbc:mysql://192.168.1.120:3306/cas_dap?useSSL=false&serverTimezone=UTC", "root", "root123456");
 //                .schema("cas_dap_access")
 //                .build();
 
@@ -34,10 +34,10 @@ public class CasGeneratorApplicationTest {
                 // 全局配置
                 .globalConfig(builder -> builder.author("wmj").outputDir(baseDir + "java"))
                 // 包配置
-                .packageConfig(builder -> builder.parent("com.cas.access").pathInfo(Collections.singletonMap(OutputFile.xml, baseDir + "resources//mapper")))
+                .packageConfig(builder -> builder.parent("com.cas").pathInfo(Collections.singletonMap(OutputFile.xml, baseDir + "resources//mapper")))
 //                .packageConfig((scanner, builder) -> builder.parent(scanner.apply("请输入包名")))
                 // 策略配置
-                .strategyConfig(builder -> builder.addInclude("access_server_port").entityBuilder().enableLombok().enableFileOverride())
+                .strategyConfig(builder -> builder.addInclude("config_access_listen").entityBuilder().enableLombok().enableFileOverride())
 //                .strategyConfig((scanner, builder) -> builder.addInclude(scanner.apply("请输入表名，多个表名用,隔开")))
 
 //                    模板引擎配置，默认 Velocity 可选模板引擎 Beetl 或 Freemarker 或 Enjoy

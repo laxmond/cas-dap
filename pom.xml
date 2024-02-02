@@ -17,11 +17,12 @@
     <modules>
         <module>cas-modules</module>
         <module>cas-generator</module>
+        <module>cas-dap-admin</module>
     </modules>
 
     <properties>
         <spring-boot.version>2.7.14</spring-boot.version>
-        <mysql-connector-j.version>8.0.33</mysql-connector-j.version>
+        <mysql-connector-j.version>8.2.0</mysql-connector-j.version>
         <netty.version>4.1.73.Final</netty.version>
         <mybatis-plus.version>3.5.3</mybatis-plus.version>
         <lombok.version>1.18.24</lombok.version>

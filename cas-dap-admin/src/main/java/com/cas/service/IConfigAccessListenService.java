@@ -1,7 +1,7 @@
-package com.cas.access.service;
+package com.cas.service;
 
-import com.cas.access.entity.AccessServerPort;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.cas.entity.ConfigAccessListen;
 
 /**
  * <p>
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author wmj
  * @since 2024-01-21
  */
-public interface IAccessServerPortService extends IService<AccessServerPort> {
+public interface IConfigAccessListenService extends IService<ConfigAccessListen> {
 
 }

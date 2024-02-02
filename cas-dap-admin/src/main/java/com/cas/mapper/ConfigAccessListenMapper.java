@@ -1,7 +1,7 @@
-package com.cas.access.mapper;
+package com.cas.mapper;
 
-import com.cas.access.entity.AccessServerPort;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.cas.entity.ConfigAccessListen;
 
 /**
  * <p>
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author wmj
  * @since 2024-01-21
  */
-public interface AccessServerPortMapper extends BaseMapper<AccessServerPort> {
+public interface ConfigAccessListenMapper extends BaseMapper<ConfigAccessListen> {
 
 }

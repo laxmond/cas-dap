@@ -1,11 +1,12 @@
-package com.cas.access.entity;
+package com.cas.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import java.io.Serializable;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.io.Serializable;
 
 /**
  * <p>
@@ -17,8 +18,8 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-@TableName("access_server_port")
-public class AccessServerPort implements Serializable {
+@TableName("config_access_listen")
+public class ConfigAccessListen implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

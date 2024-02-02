@@ -3,6 +3,6 @@ server:
 
 spring:
   application:
-    name: cas-module-access
+    name: cas-dap-admin
   profiles:
     active: dev
