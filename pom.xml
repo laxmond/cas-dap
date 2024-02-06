@@ -15,7 +15,6 @@
     <name>cas-dap</name>
     <description>cas-dap</description>
     <modules>
-        <module>cas-modules</module>
         <module>cas-generator</module>
         <module>cas-dap-admin</module>
     </modules>
